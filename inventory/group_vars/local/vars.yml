@@ -1,0 +1,9 @@
+connection: local
+server_name: es.example.com
+# network_name: esnet
+network_name: host
+elasticsearch_volume_name: esdata
+elasticsearch_image: docker.elastic.co/elasticsearch/elasticsearch:7.4.0
+elasticsearch_hostname: es01
+elasticsearch_conf_dir: /usr/share/elasticsearch
+elastic_password: "{{ vault_elastic_password }}"
